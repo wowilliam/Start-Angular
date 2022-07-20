@@ -11,10 +11,11 @@ import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-
 import { FormsModule } from '@angular/forms';
 import { RenderizandoListasComponent } from './renderizando-listas/renderizando-listas.component';
 import { ComponentePersonalizadoComponent } from './componente-personalizado/componente-personalizado.component';
+import { ComponentePaiComponent } from './componente-pai/componente-pai.component';
 
 @NgModule({
   declarations: [
-    AppComponent, PrimeiroComponenteComponent, SegundoComponenteComponent, MultiplicaPorPipe, PipeCustomizadoComponent, TwoWayDataBindingComponent, RenderizandoListasComponent, ComponentePersonalizadoComponent
+    AppComponent, PrimeiroComponenteComponent, SegundoComponenteComponent, MultiplicaPorPipe, PipeCustomizadoComponent, TwoWayDataBindingComponent, RenderizandoListasComponent, ComponentePersonalizadoComponent, ComponentePaiComponent
   ],
   imports: [
     BrowserModule,
