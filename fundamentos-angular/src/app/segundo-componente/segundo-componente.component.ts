@@ -12,7 +12,7 @@ export class SegundoComponenteComponent  {
   urlImagem = "/logo_proway.png";
 
   mostrarDataNascimento(){
-      alert("A data de nascimento é: ${this.dataNascimento}");
+      alert('A data de nascimento é: ${this.dataNascimento}');
   }
 
 }
