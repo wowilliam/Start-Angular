@@ -9,6 +9,7 @@ import { PaginaComParametrosComponent } from './pagina-com-parametros/pagina-com
 import { PaginaProtegidaComponent } from './pagina-protegida/pagina-protegida.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms';
     SegundaPaginaComponent,
     PaginaComParametrosComponent,
     PaginaProtegidaComponent,
-    LoginComponent
+    LoginComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
