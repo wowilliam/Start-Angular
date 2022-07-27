@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./detalhes-produto.component.css']
 })
 export class DetalhesProdutoComponent implements OnInit {
-
-  constructor() { }
+   produto: IProduto | undefined;
+   
+  constructor(
+    private produtoService: undefined;
+  ) { }
 
   ngOnInit(): void {
   }
