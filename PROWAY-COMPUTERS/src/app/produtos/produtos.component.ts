@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { IProduto, produtos} from '../produtos ';
 
 @Component({
   selector: 'app-produtos',
