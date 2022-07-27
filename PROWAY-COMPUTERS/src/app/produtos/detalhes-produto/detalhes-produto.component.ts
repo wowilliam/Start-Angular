@@ -10,13 +10,14 @@ export class DetalhesProdutoComponent implements OnInit {
    produto: IProduto | undefined;
 
   constructor(
-    private produtoService: undefined;
+    private produtosService: undefined;
     private route: ActivatedRoute
   ) { }
 
   ngOnInit(): void {
     const routeParams = this.route.snapshot.paramMap;
-    const produtoId = routeParams.get("id")
+    const produtoId = Number(routeParams.get("id"));
+    this.produto = this.produtosService.getOne(produtoId);
   }
 
 }
