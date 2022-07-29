@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { NotificaoService } from 'src/app/notificacao.service';
+import { NotificacaoService } from 'src/app/notificacao.service';
 import { IProduto } from 'src/app/produtos';
 import { ProdutosService } from 'src/app/produtos.service';
 
@@ -16,7 +16,7 @@ export class DetalhesProdutoComponent implements OnInit {
   constructor(
     private produtosService: ProdutosService,
     private route: ActivatedRoute,
-    private notificacaoService: NotificaoService
+    private notificacaoService: NotificacaoService
   ) { }
 
   ngOnInit(): void {
