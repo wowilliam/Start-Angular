@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Route, Router } from '@angular/router';
 import { CarrinhoService } from '../carrinho.service';
 import { IProdutoCarrinho } from '../produtos';
 
@@ -21,20 +21,20 @@ export class CarrinhoComponent implements OnInit {
     this.itensCarrinho = this.carrinhoService.obtemCarrinho();
     this.calculaTotal();
   }
-  calculaTotal(){
-    this.total = this.itensCarrinho.reduce((prev, curr) => prev +(curr.preco * curr.quantidade), 0);
+
+  calculaTotal() {
+    this.total = this.itensCarrinho.reduce((prev, curr) => prev + (curr.preco * curr.quantidade), 0);
   }
 
-  removerProdutoCarrinho(produtoId: number){
+  removerProdutoCarrinho(produtoId: number) {
     this.itensCarrinho = this.itensCarrinho.filter(item => item.id !== produtoId);
     this.carrinhoService.removerProdutoCarrinho(produtoId);
     this.calculaTotal();
   }
 
-  comprar(){
-   alert("Parabéns, você finalizou a sua compra!");
-   this.carrinhoService.limparCarrinho();
-   this.router.navigate(["produtos"]);
+  comprar() {
+    alert("Parabéns, você finalizou a sua compra!");
+    this.carrinhoService.limparCarrinho();
+    this.router.navigate(["produtos"]);
   }
-
 }
